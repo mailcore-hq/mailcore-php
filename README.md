@@ -2,13 +2,21 @@
 
 [Código-fonte](https://github.com/mailcore-hq/mailcore-php) · [Problemas e sugestões](https://github.com/mailcore-hq/mailcore-php/issues)
 
-Cliente PHP da API Mailcore, com 151 operações, transporte cURL, interoperabilidade PSR-18, downloads por callback e verificação de assinaturas de webhooks. Versão **0.1.0-alpha.1**, ainda sem publicação no Packagist.
+Cliente PHP da API Mailcore, com 151 operações, transporte cURL, interoperabilidade PSR-18, downloads por callback e verificação de assinaturas de webhooks. Versão **0.1.0-alpha.1**.
 
 Requer PHP **8.2 ou superior**, Composer e JSON. O transporte padrão requer `ext-curl` com suporte a HTTPS e uma cadeia de autoridades certificadoras confiável. É possível fornecer um cliente PSR-18 em seu lugar. Docker é utilizado no desenvolvimento desta biblioteca; não é necessário para quem a integra a uma aplicação PHP. Symfony é opcional.
 
-## Instalação local
+## Instalação
 
-Até a publicação, adicione um repositório Composer `path` na aplicação consumidora, apontando para esta pasta:
+Para versões disponíveis no Packagist, instale o pacote na aplicação consumidora:
+
+```sh
+composer require mailcore/mailcore-php:0.1.0-alpha.1
+```
+
+## Desenvolvimento e instalação local
+
+Para desenvolver com o checkout local, adicione um repositório Composer `path` na aplicação consumidora, apontando para esta pasta:
 
 ```json
 {
