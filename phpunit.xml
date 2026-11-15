@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="false" cacheDirectory="/tmp/mailcore-phpunit"
+         failOnWarning="true" failOnRisky="true" failOnDeprecation="true">
+  <testsuites>
+    <testsuite name="Mailcore"><directory suffix="Test.php">testes</directory></testsuite>
+  </testsuites>
+</phpunit>

@@ -1,0 +1,18 @@
+{
+    "resultado": "aprovado",
+    "php": "8.3.36",
+    "php_principal": "8.3",
+    "pacote": "mailcore/mailcore-php",
+    "versao": "0.1.0-alpha.1",
+    "pacote_sha256": "68017e749fdb7217171618c255034439007abafeb4b65042f5da33ecbada4b2f",
+    "pacotes_runtime_instalados": 5,
+    "dependencias_dev_instaladas": 0,
+    "classes_recursos": 30,
+    "metodos_http": 151,
+    "chamadas_psr18_falso": 151,
+    "callbacks_fluxo": 3,
+    "check_platform_reqs": "aprovado",
+    "instalacao_offline": true,
+    "rede_utilizada": false,
+    "publicado": false
+}

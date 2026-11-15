@@ -1,0 +1,51 @@
+{
+  "name": "mailcore/mailcore-php",
+  "version": "0.1.0-alpha.1",
+  "description": "Cliente PHP da API Mailcore com transporte seguro e integração PSR-18.",
+  "type": "library",
+  "homepage": "https://mailcore.com.br",
+  "support": {
+    "source": "https://github.com/mailcore-hq/mailcore-php",
+    "issues": "https://github.com/mailcore-hq/mailcore-php/issues"
+  },
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*",
+    "psr/http-client": "^1.0.3",
+    "psr/http-factory": "^1.1",
+    "nyholm/psr7": "^1.8.2"
+  },
+  "suggest": {
+    "ext-curl": "Necessária para o transporte padrão; dispensável ao fornecer um cliente PSR-18."
+  },
+  "require-dev": {
+    "phpunit/phpunit": "11.5.58",
+    "phpstan/phpstan": "^2.1",
+    "friendsofphp/php-cs-fixer": "^3.0",
+    "symfony/http-client": "7.4.23",
+    "symfony/http-foundation": "7.4.23",
+    "symfony/http-kernel": "7.4.23",
+    "symfony/routing": "7.4.23"
+  },
+  "autoload": { "psr-4": { "Mailcore\\": "src/" } },
+  "autoload-dev": {
+    "psr-4": {
+      "Mailcore\\Testes\\": "testes/",
+      "Mailcore\\Exemplos\\": "exemplos/"
+    }
+  },
+  "config": {
+    "platform": { "php": "8.2.0" },
+    "sort-packages": true,
+    "allow-plugins": false
+  },
+  "archive": {
+    "exclude": ["/vendor", "/.git", "/.env*", "/auth.json", "/dist", "/testes", "/scripts", "/.phpunit.cache", "/.php-cs-fixer.cache"]
+  },
+  "scripts": {
+    "testes": "phpunit",
+    "tipos": "phpstan analyse --no-progress",
+    "formato": "php-cs-fixer fix --dry-run --diff --using-cache=no --allow-risky=yes"
+  }
+}

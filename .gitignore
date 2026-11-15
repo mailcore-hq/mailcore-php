@@ -1,0 +1,12 @@
+/vendor/
+/dist/
+.phpunit.cache/
+.php-cs-fixer.cache
+.phpstan.cache/
+.env
+.env.*
+!.env.example
+auth.json
+*.log
+__pycache__/
+docs/*.tmp
