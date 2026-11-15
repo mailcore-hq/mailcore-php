@@ -1,6 +1,6 @@
 # Mailcore para PHP
 
-[Código-fonte](https://github.com/mailcore-hq/mailcore-php) · [Problemas e sugestões](https://github.com/mailcore-hq/mailcore-php/issues)
+[Código-fonte](https://github.com/mailcore-hq/mailcore-php) · [Packagist](https://packagist.org/packages/mailcore/mailcore-php) · [Problemas e sugestões](https://github.com/mailcore-hq/mailcore-php/issues)
 
 Cliente PHP da API Mailcore, com 151 operações, transporte cURL, interoperabilidade PSR-18, downloads por callback e verificação de assinaturas de webhooks. Versão **0.1.0-alpha.1**.
 
@@ -8,11 +8,13 @@ Requer PHP **8.2 ou superior**, Composer e JSON. O transporte padrão requer `ex
 
 ## Instalação
 
-Para versões disponíveis no Packagist, instale o pacote na aplicação consumidora:
+A versão `0.1.0-alpha.1` está disponível no [Packagist](https://packagist.org/packages/mailcore/mailcore-php). Instale o pacote na aplicação consumidora:
 
 ```sh
 composer require mailcore/mailcore-php:0.1.0-alpha.1
 ```
+
+A instalação pública foi validada com cache vazio, PHP 8.2.35 e Composer, incluindo plataforma, autoload e as 151 operações com transporte PSR-18 sintético. Veja o [registro da publicação](docs/publicacao.md).
 
 ## Desenvolvimento e instalação local
 

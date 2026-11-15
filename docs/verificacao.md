@@ -59,6 +59,21 @@ por PSR-18. As dependências preservam seus avisos e licenças.
 `instalacao-php-8.*.json` e `instalacao-local.json` registram essa prova.
 O manifesto em `dist/` identifica versões e resumos dos artefatos.
 
+## Instalação pública pelo Composer
+
+Em 15/11/2026, a versão `0.1.0-alpha.1` foi instalada pelo Packagist em um
+consumidor fora do checkout, com PHP 8.2.35, HOME e cache inicialmente vazios.
+O Composer utilizou o repositório padrão e HTTPS, sem credenciais, plugins,
+scripts ou repositórios locais. Foram instalados cinco pacotes de runtime e
+nenhuma dependência de desenvolvimento.
+
+O índice público, o `composer.lock` do consumidor e o payload instalado
+corresponderam ao commit da tag publicada. Foram conferidos 50 arquivos,
+plataforma, autoload PSR-4, versão e User-Agent. As 151 operações e três
+callbacks passaram com transporte PSR-18 sintético, sem envio de email real.
+O [registro da publicação](publicacao.md) identifica a versão e os resumos
+observados. O container, o consumidor e os caches temporários foram removidos.
+
 ## API e PostgreSQL reais locais
 
 ```sh
@@ -95,8 +110,9 @@ corpos não entram nos relatórios.
 
 ## Limites da evidência
 
-Os testes não comprovam publicação em registro, instalação em toda combinação
-de extensões/provedores, implantação cloud ou desempenho sob carga. O provedor
+Os ensaios locais anteriores são independentes da instalação pública registrada
+acima. Essas verificações não cobrem toda combinação de extensões/provedores,
+implantação cloud ou desempenho sob carga. O provedor
 PSR-18 controla sua política de rede e seu buffer anterior ao consumo pelo SDK.
 O exemplo Symfony não instala um transporte do componente Mailer. Consulte
 [a cobertura](cobertura.md) para a superfície incluída nesta versão alpha.
