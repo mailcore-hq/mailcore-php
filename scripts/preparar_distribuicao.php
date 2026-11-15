@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+require_once dirname(__DIR__).'/src/Versao.php';
+
 /** Prepara arquivos Composer de runtime, sem instalar ou publicar pacotes. */
 function executarDistribuicao(array $comando, string $diretorio): void
 {
@@ -71,6 +73,11 @@ try {
         throw new RuntimeException('Destino de distribuição inválido.');
     }
     $manifesto = json_decode(file_get_contents($raiz.'/composer.json'), true, 128, JSON_THROW_ON_ERROR);
+    // O VCS define a versão pública; o ZIP local recebe a identidade do SDK.
+    if (isset($manifesto['version']) && $manifesto['version'] !== \Mailcore\Versao::VALOR) {
+        throw new RuntimeException('A versão do manifesto diverge da identidade do SDK.');
+    }
+    $manifesto['version'] = \Mailcore\Versao::VALOR;
     $lock = json_decode(file_get_contents($raiz.'/composer.lock'), true, 128, JSON_THROW_ON_ERROR);
     $pacotes = [];
     $fontes = [[$manifesto, $raiz, true]];

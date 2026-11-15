@@ -1,6 +1,5 @@
 {
   "name": "mailcore/mailcore-php",
-  "version": "0.1.0-alpha.1",
   "description": "Cliente PHP da API Mailcore com transporte seguro e integração PSR-18.",
   "type": "library",
   "homepage": "https://mailcore.com.br",

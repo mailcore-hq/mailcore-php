@@ -1,8 +1,8 @@
 # Cobertura do SDK PHP
 
 O pacote Composer `mailcore/mailcore-php`, versão `0.1.0-alpha.1`, oferece
-**16 recursos principais, 30 classes de recursos e 151 operações**. Esta alpha
-ainda não foi publicada. A contagem descreve métodos públicos do SDK, incluindo
+**16 recursos principais, 30 classes de recursos e 151 operações**.
+A contagem descreve métodos públicos do SDK, incluindo
 variantes de download, e não 151 URLs distintas ou toda a API do produto.
 
 O contrato segue a API Mailcore. O [relatório de API local](integracao-api.json)

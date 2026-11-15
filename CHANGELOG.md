@@ -2,7 +2,7 @@
 
 ## 0.1.0-alpha.1 — 14/11/2026
 
-Primeira alpha do pacote Composer `mailcore/mailcore-php`, ainda não publicada.
+Primeira alpha do pacote Composer `mailcore/mailcore-php`.
 
 - Cliente síncrono com estado próprio, 16 recursos principais, 30 classes de
   recursos e 151 operações do contrato HTTP Mailcore.
@@ -23,6 +23,6 @@ Primeira alpha do pacote Composer `mailcore/mailcore-php`, ainda não publicada.
   local isolada. A matriz PHP 8.2–8.5 passou com 261 testes por versão e
   instalação offline do ZIP nas quatro versões.
 
-Esta versão não publica o pacote nem comprova entrega SMTP ou desempenho em
-produção. Consulte [a cobertura](docs/cobertura.md) e
+Os ensaios locais não publicam o pacote nem comprovam entrega SMTP ou desempenho
+em produção. Consulte [a cobertura](docs/cobertura.md) e
 [os resultados de verificação](docs/verificacao.md).
